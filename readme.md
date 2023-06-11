@@ -1,6 +1,15 @@
 # Blog App API Documentation
 
+
+
+## About
 This API provides endpoints for a blog application that includes user authentication, user status management, and post management. Users can sign up, log in, get and update their status, as well as perform various operations on blog posts such as retrieving all posts, creating a new post, deleting a post, updating a post, and retrieving a single post. Each post consists of a title, content, and an image.
+
+## Preview
+<p float="middle">
+  <img width="49%" alt="image" src="https://github.com/AbdurrahmanSogbesan/blog-app-server-graphql/assets/64173776/5c815ab3-36f0-4c96-87e7-d4b07057e0a8">
+  <img width="49%" alt="image" src="https://github.com/AbdurrahmanSogbesan/blog-app-server-graphql/assets/64173776/5e12f2d5-5fcf-4151-8cef-198da094c33f">
+</p>
 
 ## Prerequisites
 
