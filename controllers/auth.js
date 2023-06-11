@@ -37,28 +37,6 @@ exports.signup = async (req, res, next) => {
     // Sends error to error handling middleware
     next(err);
   }
-
-  // bcrypt
-  //   .hash(password, 12)
-  //   .then((hashedPassword) => {
-  //     const user = new User({
-  //       email: email,
-  //       password: hashedPassword,
-  //       name: name,
-  //     });
-  //     return user.save();
-  //   })
-  //   .then((result) => {
-  //     res.status(201).json({ message: "User created", userId: result._id });
-  //   })
-  //   .catch((err) => {
-  //     // Error handling
-  //     if (!err.statusCode) {
-  //       err.statusCode = 500;
-  //     }
-  //     // Sends error to error handling middleware
-  //     next(err);
-  //   });
 };
 
 exports.login = async (req, res, next) => {
