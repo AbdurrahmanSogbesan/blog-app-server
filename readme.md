@@ -49,8 +49,8 @@ By default, the server will listen on port `8080` unless the `PORT` environment 
 
 ### User Status
 
-- `GET /feed/status` - Retrieve the user's status.
-- `PUT /feed/status` - Update the user's status.
+- `GET /auth/status` - Retrieve the user's status.
+- `PUT /auth/status` - Update the user's status.
 
 ### Blog Posts
 
