@@ -30,6 +30,7 @@ Create a `.env` file in the root directory and provide the following environment
 MONGO_USER=<your-mongodb-username>
 MONGO_PASSWORD=<your-mongodb-password>
 MONGO_DEFAULT_DB=<your-mongodb-default-database>
+JWT_SECRET=<your-jwt-secret>
 ```
 
 4. Start the server:
