@@ -21,8 +21,8 @@ This API provides endpoints for a blog application that includes user authentica
 1. Clone the repository:
 
 ```shell
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/AbdurrahmanSogbesan/blog-app-server.git
+cd blog-app-server
 ```
 
 2. Install the dependencies:
