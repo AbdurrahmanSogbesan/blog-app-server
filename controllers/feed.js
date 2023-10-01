@@ -73,7 +73,8 @@ exports.createPost = async (req, res, next) => {
     // Find logged in user (post creator) in db
     const user = await User.findById(req.userId);
     user.posts.push(post);
-    await user.save();
+
+    const savedUser = await user.save();
 
     // Sending data to all connected clients using socket.io. Second argument is an object that could hold any data you want to pass
     io.getIO().emit("posts", {
@@ -84,9 +85,11 @@ exports.createPost = async (req, res, next) => {
 
     res.status(201).json({
       message: "Post Created successfully!",
-      post: post,
+      post,
       creator: { _id: user._id, name: user.name },
     });
+
+    return savedUser;
   } catch (err) {
     // Error handling
     if (!err.statusCode) {

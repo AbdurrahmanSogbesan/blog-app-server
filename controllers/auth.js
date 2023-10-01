@@ -77,6 +77,7 @@ exports.login = async (req, res, next) => {
       token: token,
       userId: user._id.toString(),
     });
+    return;
   } catch (err) {
     // Error handling
     if (!err.statusCode) {
@@ -84,6 +85,7 @@ exports.login = async (req, res, next) => {
     }
     // Sends error to error handling middleware
     next(err);
+    return err
   }
 };
 

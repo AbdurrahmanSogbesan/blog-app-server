@@ -39,6 +39,7 @@ Create a `.env` file in the root directory and provide the following environment
 MONGO_USER=<your-mongodb-username>
 MONGO_PASSWORD=<your-mongodb-password>
 MONGO_DEFAULT_DB=<your-mongodb-default-database>
+MONGO_TEST_DB=<your-mongodb-test-database>
 JWT_SECRET=<your-jwt-secret>
 ```
 
